@@ -3,7 +3,8 @@ package de.axa.contentdelivery.aoc.adventofcode.model;
 public class Game {
     private String myMove;
     private String opponentMove;
-    private Integer result;
+    private Integer wrongResult;
+    private Integer correctResult;
 
     public String getMyMove() {
         return myMove;
@@ -21,11 +22,19 @@ public class Game {
         this.opponentMove = opponentMove;
     }
 
-    public Integer getResult() {
-        return result;
+    public Integer getWrongResult() {
+        return wrongResult;
     }
 
-    public void setResult(Integer result) {
-        this.result = result;
+    public void setWrongResult(Integer result) {
+        this.wrongResult = result;
+    }    
+
+    public Integer getCorrectResult() {
+        return correctResult;
+    }
+
+    public void setCorrectResult(Integer result) {
+        this.correctResult = result;
     }    
 }

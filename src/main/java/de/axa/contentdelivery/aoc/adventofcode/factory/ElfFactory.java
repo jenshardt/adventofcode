@@ -40,15 +40,12 @@ public class ElfFactory {
 		// Startup
 		if (elfList.isEmpty()) {
 			elfList.add(new Elf(Integer.valueOf(line)));
-			LOG.info("First elf added with {} food", line);
 		}
 		
 		if (line.isBlank()) {
 			elfList.add(new Elf());
-			LOG.info("New elf");
 		} else {
 			elfList.get(elfList.size()-1).addFood(Integer.valueOf(line));
-			LOG.info("Current elf got {} more food", line);
 		}
 	}
 }
