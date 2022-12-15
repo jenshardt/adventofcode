@@ -27,11 +27,9 @@ public class TicTacToeFactory {
         gameList = new ArrayList<Game>();
 
         // Create Strategy Matrix
-        LOG.info("Start creating strategy list ...");
         try (Stream<String> lines = Files.lines(inputResource.getFile().toPath())) {
             lines.forEach(line -> createGame(line));
         }
-        LOG.info("Finished creating strategy list with {} games", gameList.size());
     }
 
     public static List<Game> getGameList() {

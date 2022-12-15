@@ -25,11 +25,9 @@ public class ElfFactory {
         elfList = new ArrayList<Elf>();
 
         // Create ElfList
-		LOG.info("Start creating elf list ...");
         try (Stream<String> lines = Files.lines(inputResource.getFile().toPath())) {
             lines.forEach(line -> setElf(line));
-        } 
-		LOG.info("Finished creating elf list - found {} elfes", elfList.size());
+        }
     }
 
     public static Stream<Elf> getElfStream() {

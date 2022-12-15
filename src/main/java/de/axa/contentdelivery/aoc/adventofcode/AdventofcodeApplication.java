@@ -13,7 +13,9 @@ public class AdventofcodeApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-		Day1.solve();
-		Day2.solve();
+		//Day1.solve();
+		//Day2.solve();
+		//Day3.solve();
+		Day4.solve();
 	}
 }

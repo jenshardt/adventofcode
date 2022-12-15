@@ -14,7 +14,7 @@ import de.axa.contentdelivery.aoc.adventofcode.model.Game;
 @Component
 public class Day2 {
 
-    private final static Logger LOG = LoggerFactory.getLogger(Day1.class);
+    private final static Logger LOG = LoggerFactory.getLogger(Day2.class);
 
     private static Integer totalResult = 0;
 
